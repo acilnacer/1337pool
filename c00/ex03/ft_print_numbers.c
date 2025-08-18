@@ -1,13 +1,11 @@
 #include <unistd.h>
 
-void ft_print_reverse_alphabet(void)
+void ft_print_numbers(void)
 {
-    char letter;
-
-    letter = 'z';
-    while (letter >= 'a')
+    char c = '0';
+    while (c <= '9')
     {
-        write(1, &letter, 1);
-        letter--;
+        write(1, &c, 1);
+        c++;
     }
 }
